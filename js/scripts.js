@@ -1,12 +1,3 @@
-/*!
-* Start Bootstrap - Agency v7.0.12 (https://startbootstrap.com/theme/agency)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
-
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
@@ -51,7 +42,52 @@ window.addEventListener('DOMContentLoaded', event => {
             if (window.getComputedStyle(navbarToggler).display !== 'none') {
                 navbarToggler.click();
             }
+
         });
     });
+    navbarToggler.addEventListener('click',()=>{
+        const navbarCollapsible = document.body.querySelector('#mainNav');
+        if (window.scrollY === 0) {
+            navbarCollapsible.classList.toggle('bg-primary')
 
+        } else {
+            navbarCollapsible.classList.add('bg-primary')
+        }
+
+    });
+
+});
+
+let currentIndex = 0;
+const services = document.querySelectorAll('.service');
+const prevBtn = document.getElementById('left');
+const nextBtn = document.getElementById('right');
+
+prevBtn.addEventListener('click', () => {
+    showService(currentIndex - 1);
+});
+
+nextBtn.addEventListener('click', () => {
+    showService(currentIndex + 1);
+});
+
+function showService(index) {
+    services[currentIndex].classList.remove('active');
+    services[currentIndex].classList.remove('next');
+    let nextIndex = (index + 1 + services.length) % services.length;
+    currentIndex = (index + services.length) % services.length;
+    services.forEach(service => {
+        service.classList.remove('active');
+        service.classList.remove('next');
+    });
+    services[currentIndex].classList.add('active');
+    services[nextIndex].classList.add('next');
+}
+
+const darkmode=document.querySelector('.darkmode');
+
+darkmode.addEventListener('click',()=>{
+    const toggled=document.body.classList.toggle('dark-mode');
+    const Change=toggled?darkmode.innerHTML='<i class="fa fa-sun"></i>':darkmode.innerHTML='<i class="fa fa-moon"></i>';
+    
 });

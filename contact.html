@@ -20,8 +20,8 @@
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background: #0d6efd;">
-            <div class="container">
-                <a class="navbar-brand" href="index.html"><span>Tenchou</span></a>
+            <div class="container-fluid">
+                <a class="navbar-brand text-light" href="index.html"><img src="assets/Photoroom-20240601_110958.png" alt="Tenchoutech logo" class="img-responsive" style="width: 140px;height: 70px;object-fit: cover;"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
@@ -31,6 +31,11 @@
                         <li class="nav-item"><a class="nav-link text fw-bold" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link text fw-bold" href="pricing.html">Pricing</a></li>
                         <li class="nav-item"><a class="nav-link text fw-bold" href="contact.html">Contact</a></li>
+                        <li class="nav-item">
+                            <button class="btn border rounded-circle ms-3 text-light darkmode" type="button" aria-label="Toggle darkmode">
+                                <i class="fa fa-moon"></i>
+                            </button>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -38,19 +43,25 @@
         <!-- Masthead-->
         <br>
         <!-- Contact-->
+        <div class="page-section py-2">
+            <div class="text-center" style="margin-top: 10rem;">
+                <h2 class="section-heading text-uppercase">Contact Us</h2>
+                <h3 class="section-subheading text-muted">Be sure to leave us a message</h3>
+            </div>
+        </div>
+        <div class="map col-lg-8 mx-auto my-3">
+            <div class="map-iframe bg-primary rounded-3 " style="height: 400px;">
+                <h3>Location</h3>
+            </div>
+            <div class="location mt-3">
+                <p class="ps-3 mb-0"><span class="fw-bold">Tenchou Technology</span></p>
+                <p class="ps-3 mb-0"><span class="fw-bold"><i class="fa fa-map-marker me-2"></i>Location : </span>Fenou Street, Sakumono-Tema <br> Ghana</p>
+                <p class="ps-3 mb-0"><span class="fw-bold"><i class="fa fa-envelope me-2"></i>Email : </span>tenchoutech@gmail.com</p>
+                <p class="ps-3 mb-0"><span class="fw-bold"><i class="fa fa-phone me-2"></i>Call us : </span>05156465949494<br> Ghana</p>
+            </div>
+        </div>
         <section class="page-section" id="contact">
             <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- * * SB Forms Contact Form * *-->
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- This form is pre-integrated with SB Forms.-->
-                <!-- To make this form functional, sign up at-->
-                <!-- https://startbootstrap.com/solution/contact-forms-->
-                <!-- to get an API token!-->
                 <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
@@ -86,18 +97,14 @@
                     <div class="d-none" id="submitSuccessMessage">
                         <div class="text-center text-white mb-3">
                             <div class="fw-bolder">Form submission successful!</div>
-                            To activate this form, sign up at
                             <br />
                             <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                         </div>
                     </div>
-                    <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
                     <!-- an error submitting the form-->
                     <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                     <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Send Message</button></div>
                 </form>
             </div>
         </section>

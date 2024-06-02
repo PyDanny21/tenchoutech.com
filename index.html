@@ -20,10 +20,9 @@
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand text-light" href="#page-top"><span>Tenchou</span></a>
+            <div class="container-fluid">
+                <a class="navbar-brand text-light" href="#page-top"><img src="assets/Photoroom-20240601_110958.png" alt="Tenchoutech logo" class="img-responsive" style="width: 140px;height: 70px;object-fit: cover;"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
                     <i class="fas fa-bars ms-1"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -44,12 +43,21 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">Welcome to</div>
-                <div class="masthead-heading text-uppercase">Tenchou Tech</div>
-                <div class="text h5">Where we empower businessess online while offering tutorials to young enthusiasts</div>
-                <a class="btn btn-primary btn-xl rounded-5 col-lg-2 cta mt-4 p-3 d-flex align-items-center mx-auto justify-content-center" href="/contact.html">
-                    <i class="fab fa-whatsapp me-2" style="font-size: xx-large;"></i>
-                    Contact Us</a>
+                <div class="row d-flex" style="flex-direction: column;">
+                    <div class="masthead-subheading" style="width: fit-content;">Empower your business online with the best</div>
+                    <div class="masthead-heading text-uppercase" style="width: fit-content;">Tech Company</div>
+                    <!-- <div class="text h5" style="width: fit-content;">Where we empower businessess online while offering tutorials to young enthusiasts</div> -->
+                    <div style="display: flex;">
+                        <a class="btn btn-primary btn-xl rounded-5 col-lg-2 cta mt-4 p-3 d-flex align-items-center justify-content-center" href="/contact.html">
+                            Contact Us
+                            <i class="fa fa-arrow-right m-2"></i>
+                        </a>
+                        <a class="btn btn-xl text-light rounded-5 col-lg-2 cta mt-4 p-3 d-flex align-items-center justify-content-center" href="#portfolio" style="margin: 0 20px; border: 2px solid rgb(0, 76, 254)">
+                            Portfolio
+                            <i class="fa fa-arrow-right m-2"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </header>
         <!-- More  -->
@@ -111,27 +119,38 @@
         </section>
 
         <!-- Services -->
-        <section class="page-section" id="services">
-            <div class="container-fluid">
+        <section class="page-section pb-0" id="services">
+            <div class="container-fluid" style="overflow-x: hidden;">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase" style="margin-bottom: 3rem;">Our services</h2>
                     <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
                 </div>
-                <div class="row text-center px-3 d-lg-flex align-items-center justify-content-center">
-                    <div class="col-lg-5 rounded-5 me-lg-3 p-lg-5 p-sm-5 mb-4" style="padding:2.5rem 1rem; background: lavender;">
-                        <h3 class="text-uppercase mb-3 lower"><img src="assets/img/Images/port3.jpg" class="img rounded-circle me-2" alt="Modern full stack web app developement" width="80px" height="80px"> Web Development</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste maxime sit eos nihil eius, obcaecati voluptatem repellat numquam amet, qui ad dolorem similique alias</p>
-                        <a href="pricing.html" class="text text-center text-decoration-none text-light bg-primary rounded-5 mt-2" style="font-size: large;padding: 0.7rem;">See pricing</a>
+                <div class="row text-center ps-lg-5 px-3 d-lg-flex align-items-center justify-content-center" style="flex-wrap: nowrap;overflow: hidden;">
+                    <div class="col-lg-6 rounded-5 me-lg-3 p-lg-5 p-sm-5 mb-4 service active" style="padding:2.5rem 1rem; background: lavender;height: fit-content!important;">
+                        <h3 class="text-uppercase mb-5 lower"><img src="assets/img/Images/port3.jpg" class="img rounded-circle me-2" alt="Modern full stack web app developement" width="100px" height="100px"> Web Development</h3>
+                        <p class="text mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste maxime sit eos nihil eius, obcaecati voluptatem repellat numquam amet, qui ad dolorem similique alias</p>
+                        <a href="pricing.html" class="text text-center text-decoration-none text-light bg-primary rounded-5 mt-2" style="font-size: large;padding: 1rem;margin-top: 20px!important;">See pricing <i class="fa fa-arrow-right"></i></a>
                     </div>
-                    <div class="col-lg-5 rounded-5 me-lg-3 p-lg-5 p-sm-5 mb-4" style="padding:2.5rem 1rem;background: lavender;">
-                        <h3 class="text-uppercase mb-3 lower"><img src="assets/img/Images/port2.jpg" class="img rounded-circle me-3" alt="Modern full stack web app developement" width="80px" height="80px"> Web Application</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste maxime sit eos nihil eius, obcaecati voluptatem repellat numquam amet, qui ad dolorem similique alias</p>
-                        <a href="pricing.html" class="text text-center text-decoration-none text-light bg-primary rounded-5 mt-2" style="font-size: large;padding: 0.7rem;">See pricing</a>
+                    <div class="col-lg-6 rounded-5 me-lg-3 p-lg-5 p-sm-5 mb-4 service" style="padding:2.5rem 1rem; background: lavender;">
+                        <h3 class="text-uppercase mb-5 lower d-flex align-items-center"><img src="assets/img/Images/port2.jpg" class="img rounded-circle me-2" alt="Modern full stack web app developement" width="100px" height="100px">Website Redesign</h3>
+                        <p class="text mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste maxime sit eos nihil eius, obcaecati voluptatem repellat numquam amet, qui ad dolorem similique alias</p>
+                        <a href="pricing.html" class="text text-center text-decoration-none text-light bg-primary rounded-5 mt-2" style="font-size: large;padding: 1rem;margin-top: 20px!important;">See pricing <i class="fa fa-arrow-right"></i></a>
                     </div>
+                    <div class="col-lg-6 rounded-5 me-lg-3 p-lg-5 p-sm-5 mb-4 service" style="padding:2.5rem 1rem; background: lavender;height: fit-content!important;">
+                        <h3 class="text-uppercase mb-5 lower d-flex align-items-center"><img src="assets/img/Images/port3.jpg" class="img rounded-circle me-2" alt="Modern full stack web app developement" width="100px" height="100px"> Website Management</h3>
+                        <p class="text mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste maxime sit eos nihil eius, obcaecati voluptatem repellat numquam amet, qui ad dolorem similique alias</p>
+                        <a href="pricing.html" class="text text-center text-decoration-none text-light bg-primary rounded-5 mt-2" style="font-size: large;padding: 1rem;margin-top: 20px!important;">See pricing <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                    <div class="col-lg-6 rounded-5 me-lg-3 p-lg-5 p-sm-5 mb-4 service" style="padding:2.5rem 1rem; background: lavender;">
+                        <h3 class="text-uppercase mb-5 lower d-flex align-items-center"><img src="assets/img/Images/port2.jpg" class="img rounded-circle me-2" alt="Modern full stack web app developement" width="100px" height="100px">Data Entry Services</h3>
+                        <p class="text mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste maxime sit eos nihil eius, obcaecati voluptatem repellat numquam amet, qui ad dolorem similique alias</p>
+                        <a href="pricing.html" class="text text-center text-decoration-none text-light bg-primary rounded-5 mt-2" style="font-size: large;padding: 1rem;margin-top: 20px!important;">See pricing <i class="fa fa-arrow-right"></i></a>
+                    </div>
+            
                 </div>
-                <div class="left-right-btn mx-auto col-lg-2 my-5 d-flex align-items-center" style='justify-content: space-evenly;'>
-                    <button class="btn btn-primary text-light rounded-circle mx-3 fw-bold" style="width: 50px;height: 50px; cursor: pointer;"><i class="fa fa-arrow-left"></i></button>
-                    <button class="btn btn-primary text-light rounded-circle mx-3 fw-bold" style="width: 50px;height: 50px; cursor: pointer;"><i class="fa fa-arrow-right"></i></button>
+                <div class="left-right-btn mx-auto col-lg-2 my-lg-5 my-3 d-flex align-items-center" style='justify-content: space-evenly;'>
+                    <button class="btn btn-primary text-light rounded-circle mx-3 fw-bold" id="left" style="width: 50px;height: 50px; cursor: pointer;"><i class="fa fa-arrow-left"></i></button>
+                    <button class="btn btn-primary text-light rounded-circle mx-3 fw-bold" id="right" style="width: 50px;height: 50px; cursor: pointer;"><i class="fa fa-arrow-right"></i></button>
                 </div>
             </div>
         </section>
@@ -188,8 +207,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <!-- Portfolio item 4-->
+                    <!-- <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
                                 <div class="portfolio-hover">
@@ -204,7 +223,6 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- Portfolio item 5-->
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
                                 <div class="portfolio-hover">
@@ -219,7 +237,6 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <!-- Portfolio item 6-->
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
                                 <div class="portfolio-hover">
@@ -232,7 +249,7 @@
                                 <div class="portfolio-caption-subheading text-muted">Photography</div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -240,12 +257,12 @@
         <section class="page-section">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Our development cycle</h2>
+                    <h2 class="section-heading text-uppercase">Our Design process</h2>
                     <h3 class="section-subheading text-muted">Worry free web development cycle</h3>
                 </div>
                 <ul class="timeline">
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
+                        <div class="timeline-image"><h1 style="width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;font-family: 'Times New Roman', Times, serif;-webkit-text-stroke: 2px royalblue;color: royalblue;">1</h1></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <!-- <h4>2009-2011</h4> -->
@@ -255,7 +272,7 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
+                        <div class="timeline-image"><h1 style="width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;font-family: 'Times New Roman', Times, serif;-webkit-text-stroke: 2px royalblue;color: royalblue;">2</h1></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <!-- <h4>March 2011</h4> -->
@@ -265,7 +282,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
+                        <div class="timeline-image"><h1 style="width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;font-family: 'Times New Roman', Times, serif;-webkit-text-stroke: 2px royalblue;color: royalblue;">3</h1></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <!-- <h4>December 2015</h4> -->
@@ -275,7 +292,7 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
+                        <div class="timeline-image"><h1 style="width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;font-family: 'Times New Roman', Times, serif;-webkit-text-stroke: 2px royalblue;color: royalblue;">4</h1></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <!-- <h4>July 2020</h4> -->
@@ -285,7 +302,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
+                        <div class="timeline-image"><h1 style="width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;font-family: 'Times New Roman', Times, serif;-webkit-text-stroke: 2px royalblue;color: royalblue;">5</h1></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <!-- <h4>December 2015</h4> -->
@@ -295,7 +312,7 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
+                        <div class="timeline-image"><h1 style="width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;font-family: 'Times New Roman', Times, serif;-webkit-text-stroke: 2px royalblue;color: royalblue;">6</h1></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <!-- <h4>July 2020</h4> -->
@@ -373,7 +390,16 @@
                     <li><a href="#" class="text-decoration-none m-lg-3 m-2 text-light"><i class="fab fa-twitter fa-2x"></i></a></li>
                     <li><a href="#" class="text-decoration-none m-lg-3 m-2 text-light"><i class="fab fa-whatsapp fa-2x"></i></a></li>
                 </ul>
-                <div class="row align-items-center">
+                <div class="row align-items-center" style="justify-content: space-evenly;">
+                    <div class="col-lg-4 text-light">
+                        <span class="text-center fw-bold">Contact</span>
+                        <ul style="color: rgb(255, 187, 0);;">
+                            <li style="list-style: none;">Tenchou Tech</li>
+                            <li style="list-style: none;"><i class="fa fa-envelope"></i> tenchoutech@gmail.com</li>
+                            <li style="list-style: none;"><i class="fa fa-map-marker"></i> Fenou St. Sakumono</li>
+                            <li style="list-style: none;"><i class="fa fa-phone"></i> 2335555054438488</li>
+                        </ul>
+                    </div>
                     <div class="col-4 text-light">
                         <span class="text-center fw-bold">Quick Links</span>
                         <ul>
@@ -392,16 +418,6 @@
                             <li style="list-style: none;"><a href="#" style="text-decoration: none;color: rgb(255, 187, 0);">X</a></li>
                             <li style="list-style: none;"><a href="#" style="text-decoration: none;color: rgb(255, 187, 0);">LinkedIn</a></li>
                             <li style="list-style: none;"><a href="#" style="text-decoration: none;color: rgb(255, 187, 0);">Whatsapp</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-4 text-light">
-                        <span class="text-center fw-bold">Other Links</span>
-                        <ul>
-                            <li style="list-style: none;"><a href="#" style="text-decoration: none;color: rgb(255, 187, 0);">Terms and Conditions</a></li>
-                            <li style="list-style: none;"><a href="#" style="text-decoration: none;color: rgb(255, 187, 0);">Privacy</a></li>
-                            <li style="list-style: none;"><a href="#" style="text-decoration: none;color: rgb(255, 187, 0);">Developer</a></li>
-                            <li style="list-style: none;"><a href="#" style="text-decoration: none;color: rgb(255, 187, 0);">Recent Posts</a></li>
-                            <li style="list-style: none;"><a href="#" style="text-decoration: none;color: rgb(255, 187, 0);">Tutorials</a></li>
                         </ul>
                     </div>
                 </div>
