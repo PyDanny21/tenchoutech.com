@@ -67,12 +67,27 @@
   --bs-link-hover-color: #cca000;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff4cc;
+  --lavender:lavender;
+  --lightblue:lightblue;
 }
 
 .dark-mode{
   
   --bs-body-bg: #333;
   --bs-body-color:#fff;
+    --lavender: rgb(123 123 127);
+    --bs-dark: #fff;
+    --bs-secondary-color: #fff;
+    --bs-light-rgb: #333;
+    --bs-dark-rgb: #fff;
+    --lightblue:#658189;
+
+}
+#process{
+  background: var(--lightblue);
+}
+#about,#test{
+  background: var(--lavender);
 }
 
 p {
@@ -190,7 +205,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/Images/port7.jpg");
+  background-image: linear-gradient(to right,rgba(0,0,0,0.8),rgba(0,0,0,0.3)),url("../assets/img/Images/bg1.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -229,90 +244,6 @@ header.masthead .masthead-heading {
     margin-bottom: 1.5rem;
   }
 }
-#portfolio .portfolio-item {
-  max-width: 26rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-#portfolio .portfolio-item .portfolio-link {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-}
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
-  display: flex;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(13, 110, 253, 0.5);
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity ease-in-out 0.25s;
-}
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
-  font-size: 1.25rem;
-  color: white;
-}
-#portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
-  opacity: 1;
-}
-#portfolio .portfolio-item .portfolio-caption {
-  padding: 1.5rem;
-  text-align: center;
-  background-color: #fff;
-}
-#portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
-  font-size: 1.5rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  margin-bottom: 0;
-}
-#portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
-  font-style: italic;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.portfolio-modal .modal-dialog {
-  margin: 1rem;
-  max-width: 100vw;
-}
-.portfolio-modal .modal-content {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  text-align: center;
-}
-.portfolio-modal .modal-content h2, .portfolio-modal .modal-content .h2 {
-  font-size: 3rem;
-  line-height: 3rem;
-}
-.portfolio-modal .modal-content p.item-intro {
-  font-style: italic;
-  margin-bottom: 2rem;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-.portfolio-modal .modal-content p {
-  margin-bottom: 2rem;
-}
-.portfolio-modal .modal-content ul.list-inline {
-  margin-bottom: 2rem;
-}
-.portfolio-modal .modal-content img {
-  margin-bottom: 2rem;
-}
-.portfolio-modal .close-modal {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  width: 3rem;
-  height: 3rem;
-  cursor: pointer;
-  background-color: transparent;
-}
-.portfolio-modal .close-modal:hover {
-  opacity: 0.3;
-}
-
 .timeline {
   position: relative;
   padding: 0;
@@ -579,8 +510,17 @@ section#contact form#contactForm :-ms-input-placeholder {
 .timeline-image{
   font-size: 10rem!important;
 }
+.carousel-inner{
+  height: 70vh!important;
+  min-height: 70vh!important;
+}
+.carousel-item{
+  width: 50%!important;
+}
 
-
+.accordion{
+  width: 75%!important;
+}
 
 @media (max-width:900px) {
   .active{
@@ -617,4 +557,17 @@ section#contact form#contactForm :-ms-input-placeholder {
     font-size: 2rem;
     
   }
+  .carousel-item{
+    width: 100%;
+  }
+  .carousel-inner{
+    height: 80vh!important;
+  }
+  .rcd{
+    left: 23%!important;
+  }
+  .accordion{
+    width: 90%!important;
+  }
+  
 }

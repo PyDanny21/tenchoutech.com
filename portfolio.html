@@ -41,75 +41,95 @@
                 </div>
             </div>
         </nav>
-        <!-- Masthead-->
-        <br>
-        <!-- Contact-->
-        <div class="page-section py-2">
-            <div class="text-center" style="margin-top: 10rem;">
-                <h2 class="section-heading text-uppercase">Contact Us</h2>
-                <h3 class="section-subheading text-muted">Be sure to leave us a message</h3>
-            </div>
-        </div>
-        <div class="map col-lg-8 mx-auto my-3">
-            <div class="map-iframe bg-primary rounded-3" style="height: 400px;overflow: hidden;">
-                <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.5492649223906!2d-0.04968602525434417!3d5.633343394347808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf86c5486b6169%3A0x855fa5e27d1142aa!2sFenou%20St%2C%20Sakumono!5e0!3m2!1sen!2sgh!4v1714238417629!5m2!1sen!2sgh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                
-            </div>
-            <div class="location mt-3">
-                <p class="ps-3 mb-0"><span class="fw-bold">Tenchou Technology</span></p>
-                <p class="ps-3 mb-0"><span class="fw-bold"><i class="fa fa-map-marker me-2"></i>Location : </span>Fenou Street, Sakumono-Tema <br> Ghana</p>
-                <p class="ps-3 mb-0"><span class="fw-bold"><i class="fa fa-envelope me-2"></i>Email : </span>tenchoutech@gmail.com</p>
-                <p class="ps-3 mb-0"><span class="fw-bold"><i class="fa fa-phone me-2"></i>Call us : </span>05156465949494</p>
-            </div>
-        </div>
-        <section class="page-section" id="contact">
+       
+        <section class="page-section bg-light mt-5" id="portfolio">
             <div class="container">
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                    <div class="row align-items-stretch mb-5">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <!-- Name input-->
-                                <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <div class="form-group">
-                                <!-- Email address input-->
-                                <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <div class="form-group mb-md-0">
-                                <!-- Phone number input-->
-                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Portfolio</h2>
+                    <h3 class="section-subheading text-muted">Businesses we've empowered to succeed online!</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4 rounded-5">
+                        <!-- Portfolio item 1-->
+                        <div class="p-item bg-primary" >
+                            <a class="portfolio-link text-decoration-none bg-primary" data-bs-toggle="modal" href="#" title="Open project">
+                                <div class="p-item-image" style="border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;overflow:hidden">
+                                    <img class="img-fluid" src="assets/img/Images/nuamah.png" alt="..." />
+                                </div>
+                            </a>
                         </div>
-                        <div class="col-md-6">
-                            <div class="form-group form-group-textarea mb-md-0">
-                                <!-- Message input-->
-                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                        </div>
+                        <div class="text-center bg-primary text-light p-1 fw-bold"  style="border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;">Business</div>
                     </div>
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted-->
-                    <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center text-white mb-3">
-                            <div class="fw-bolder">Form submission successful!</div>
-                            <br />
-                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                    <div class="col-lg-4 col-sm-6 mb-4 rounded-5">
+                        <!-- Portfolio item 1-->
+                        <div class="p-item bg-primary" >
+                            <a class="portfolio-link text-decoration-none bg-primary" data-bs-toggle="modal" href="#" title="Open project">
+                                <div class="p-item-image" style="border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;overflow:hidden">
+                                    <img class="img-fluid" src="assets/img/Images/Screenshot (19).png" alt="..." />
+                                </div>
+                            </a>
                         </div>
+                        <div class="text-center bg-primary text-light p-1 fw-bold"  style="border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;">Business</div>
                     </div>
-                    <!-- an error submitting the form-->
-                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                    <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Send Message</button></div>
-                </form>
+                    <div class="col-lg-4 col-sm-6 mb-4 rounded-5">
+                        <!-- Portfolio item 1-->
+                        <div class="p-item bg-primary" >
+                            <a class="portfolio-link text-decoration-none bg-primary" data-bs-toggle="modal" href="#" title="Open project">
+                                <div class="p-item-image" style="border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;overflow:hidden">
+                                    <img class="img-fluid" src="assets/img/Images/Screenshot (21).png" alt="..." />
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center bg-primary text-light p-1 fw-bold"  style="border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;">E-Commerce</div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 rounded-5">
+                        <!-- Portfolio item 1-->
+                        <div class="p-item bg-primary" >
+                            <a class="portfolio-link text-decoration-none bg-primary" data-bs-toggle="modal" href="#" title="Open project">
+                                <div class="p-item-image" style="border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;overflow:hidden">
+                                    <img class="img-fluid" src="assets/img/Images/Screenshot (28).png" alt="..." />
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center bg-primary text-light p-1 fw-bold"  style="border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;">Under Development</div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 rounded-5">
+                        <!-- Portfolio item 1-->
+                        <div class="p-item bg-primary" >
+                            <a class="portfolio-link text-decoration-none bg-primary" data-bs-toggle="modal" href="#" title="Open project">
+                                <div class="p-item-image" style="border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;overflow:hidden">
+                                    <img class="img-fluid" src="assets/img/Images/Screenshot (34).png" alt="..." />
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center bg-primary text-light p-1 fw-bold"  style="border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;">Standard</div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 rounded-5">
+                        <!-- Portfolio item 1-->
+                        <div class="p-item bg-primary" >
+                            <a class="portfolio-link text-decoration-none bg-primary" data-bs-toggle="modal" href="#" title="Open project">
+                                <div class="p-item-image" style="border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;overflow:hidden">
+                                    <img class="img-fluid" src="assets/img/Images/nuamah.png" alt="..." />
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center bg-primary text-light p-1 fw-bold"  style="border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;">Business</div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 rounded-5">
+                        <!-- Portfolio item 1-->
+                        <div class="p-item bg-primary" >
+                            <a class="portfolio-link text-decoration-none bg-primary" data-bs-toggle="modal" href="#" title="Open project">
+                                <div class="p-item-image" style="border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;overflow:hidden">
+                                    <img class="img-fluid" src="assets/img/Images/nuamah.png" alt="..." />
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center bg-primary text-light p-1 fw-bold"  style="border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;">Business</div>
+                    </div>
+                </div>
             </div>
         </section>
-        <!-- Footer-->
+
         <footer class="footer" style="background: #0b052c;">
             <div class="container-fluid mb-0 p-lg-5 p-4">
                 <ul class="text-center d-flex mx-auto col-lg-3 align-items-center justify-content" style="list-style: none;">
@@ -152,10 +172,7 @@
                 </div>
             </div>
         </footer>
-        <!-- Bootstrap core JS-->
-        <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-
         <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
         <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
     </body>

@@ -55,39 +55,29 @@ window.addEventListener('DOMContentLoaded', event => {
         }
 
     });
-
-});
-
-let currentIndex = 0;
-const services = document.querySelectorAll('.service');
-const prevBtn = document.getElementById('left');
-const nextBtn = document.getElementById('right');
-
-prevBtn.addEventListener('click', () => {
-    showService(currentIndex - 1);
-});
-
-nextBtn.addEventListener('click', () => {
-    showService(currentIndex + 1);
-});
-
-function showService(index) {
-    services[currentIndex].classList.remove('active');
-    services[currentIndex].classList.remove('next');
-    let nextIndex = (index + 1 + services.length) % services.length;
-    currentIndex = (index + services.length) % services.length;
-    services.forEach(service => {
-        service.classList.remove('active');
-        service.classList.remove('next');
-    });
-    services[currentIndex].classList.add('active');
-    services[nextIndex].classList.add('next');
-}
-
-const darkmode=document.querySelector('.darkmode');
-
-darkmode.addEventListener('click',()=>{
-    const toggled=document.body.classList.toggle('dark-mode');
-    const Change=toggled?darkmode.innerHTML='<i class="fa fa-sun"></i>':darkmode.innerHTML='<i class="fa fa-moon"></i>';
     
+    
+    const darkmode=document.querySelector('.darkmode');
+    
+    // Function to update the mode and save it to local storage
+    function updateMode(isDarkMode) {
+        const toggled=document.body.classList.toggle('dark-mode', isDarkMode);
+        const Change=toggled?darkmode.innerHTML='LIGHT <i class="fa fa-lightbulb"></i>':darkmode.innerHTML='DARK <i class="fa fa-moon"></i>';
+        localStorage.setItem('darkMode', isDarkMode ? 'enabled' : 'disabled');
+    }
+
+    // Event listener for dark mode toggle
+    darkmode.addEventListener('click', () => {
+        const isDarkMode = document.body.classList.toggle('dark-mode');
+        updateMode(isDarkMode);
+    });
+    
+    // On page load, apply the saved mode
+    window.addEventListener('load', () => {
+        const savedMode = localStorage.getItem('darkMode');
+        const isDarkMode = savedMode === 'enabled';
+        updateMode(isDarkMode);
+    });
 });
+
+
