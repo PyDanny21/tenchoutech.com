@@ -62,7 +62,7 @@ window.addEventListener('DOMContentLoaded', event => {
     // Function to update the mode and save it to local storage
     function updateMode(isDarkMode) {
         const toggled=document.body.classList.toggle('dark-mode', isDarkMode);
-        const Change=toggled?darkmode.innerHTML='LIGHT <i class="fa fa-lightbulb"></i>':darkmode.innerHTML='DARK <i class="fa fa-moon"></i>';
+        const Change=toggled?darkmode.innerHTML='<i class="fa fa-lightbulb"></i> LIGHT':darkmode.innerHTML='<i class="fa fa-moon"></i> DARK ';
         localStorage.setItem('darkMode', isDarkMode ? 'enabled' : 'disabled');
     }
 
@@ -79,5 +79,27 @@ window.addEventListener('DOMContentLoaded', event => {
         updateMode(isDarkMode);
     });
 });
+const Package=document.querySelectorAll('#selectPackage');
+const Checkout=document.querySelector('.checkout');
+const Close=document.querySelector('.close');
 
+Package.forEach(package=>{
+    package.addEventListener('click',()=>{
+        Checkout.style.display='block';
+    });
+});
+
+Close.addEventListener('click',()=>{
+    Checkout.style.display='none';
+});
+// const Portfolio=document.querySelectorAll('#portfolio-item');
+// Portfolio.forEach(portfolio => {
+//     portfolio.addEventListener(('mouseover'),()=>{
+//         console.log('hrwbwr'); 
+//     });
+//     // portfolio.addEventListener('mouseleave',()=>{
+//     //     portfolio.closest('#openProject').innerHTML='';
+//     // });
+    
+// });
 

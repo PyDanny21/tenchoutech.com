@@ -21,7 +21,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg  navbar-dark fixed-top" id="mainNav" style="background: #0d6efd;">
             <div class="container">
-                <a class="navbar-brand text-light" href="index.html"><img src="assets/Photoroom-20240601_110958.png" alt="Tenchoutech logo" class="img-responsive" style="width: 140px;height: 70px;object-fit: cover;"></a>
+                <a class="navbar-brand text-light" href="index.html" style="outline: none;border: none;"><img src="assets/Photoroom-20240601_110958.png" alt="Tenchoutech logo" class="img-responsive" style="width: 100px;height: 50px;object-fit: cover;"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars ms-1"></i>
                 </button>
@@ -86,7 +86,7 @@
                         <div class="col-md-6">
                             <div class="form-group form-group-textarea mb-md-0">
                                 <!-- Message input-->
-                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
+                                <textarea class="form-control" id="message" placeholder="Tell us about your project *" data-sb-validations="required"></textarea>
                                 <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                             </div>
                         </div>
@@ -109,16 +109,30 @@
                 </form>
             </div>
         </section>
-        <!-- Footer-->
-        <footer class="footer" style="background: #0b052c;">
+
+        <footer class="footer" style="background: #0b052c;position: relative;margin-top: 350px;">
+            <div class="row g-0 bg-primary text-light ad border rounded-5 p-3" style="position: absolute;top: -210px;box-shadow: 0 10px gold;">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="large">Talk to us about your dreams to digitize your business and we will make it happen</p>
+                    <div class="h4 fs-1" style="font-family:fantasy;">
+                        Building Eye Catchy website for clients
+                    </div>
+                    <!-- <span style="font-family: cursive;font-weight: 700;font-size: x-large;">You deserve better</span> -->
+                    <!-- <a class="btn btn-warning btn-xl rounded-5 col-lg-3 mx-auto cta mt-4 p-3 d-flex align-items-center justify-content-center" href="contact.html">
+                        Contact Us
+                        <i class="fa fa-arrow-right m-2"></i>
+                    </a> -->
+                    <ul class="text-center d-flex mx-auto col-lg-3 align-items-center justify-content-center mt-2" style="list-style: none;">
+                        <li><a href="#" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-facebook fa-2x"></i></a></li>
+                        <li><a href="#" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-tiktok fa-2x"></i></a></li>
+                        <li><a href="#" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-instagram fa-2x"></i></a></li>
+                        <li><a href="#" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-twitter fa-2x"></i></a></li>
+                        <li><a href="#" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-whatsapp fa-2x"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
             <div class="container-fluid mb-0 p-lg-5 p-4">
-                <ul class="text-center d-flex mx-auto col-lg-3 align-items-center justify-content" style="list-style: none;">
-                    <li><a href="#" class="text-decoration-none m-lg-3 m-2 text-light"><i class="fab fa-facebook fa-2x"></i></a></li>
-                    <li><a href="#" class="text-decoration-none m-lg-3 m-2 text-light"><i class="fab fa-tiktok fa-2x"></i></a></li>
-                    <li><a href="#" class="text-decoration-none m-lg-3 m-2 text-light"><i class="fab fa-instagram fa-2x"></i></a></li>
-                    <li><a href="#" class="text-decoration-none m-lg-3 m-2 text-light"><i class="fab fa-twitter fa-2x"></i></a></li>
-                    <li><a href="#" class="text-decoration-none m-lg-3 m-2 text-light"><i class="fab fa-whatsapp fa-2x"></i></a></li>
-                </ul>
                 <div class="row align-items-center" style="justify-content: space-evenly;">
                     <div class="col-lg-4 text-light">
                         <span class="text-center fw-bold">Contact</span>
@@ -132,11 +146,11 @@
                     <div class="col-4 text-light">
                         <span class="text-center fw-bold">Quick Links</span>
                         <ul>
-                            <li style="list-style: none;"><a href="#" style="text-decoration: none;color: rgb(255, 187, 0);">Pricing</a></li>
-                            <li style="list-style: none;"><a href="#" style="text-decoration: none;color: rgb(255, 187, 0);">Contact</a></li>
+                            <li style="list-style: none;"><a href="pricing.html" style="text-decoration: none;color: rgb(255, 187, 0);">Pricing</a></li>
+                            <li style="list-style: none;"><a href="contact.html" style="text-decoration: none;color: rgb(255, 187, 0);">Contact</a></li>
                             <li style="list-style: none;"><a href="#about" style="text-decoration: none;color: rgb(255, 187, 0);">About</a></li>
                             <li style="list-style: none;"><a href="#services" style="text-decoration: none;color: rgb(255, 187, 0);">Services</a></li>
-                            <li style="list-style: none;"><a href="#portfolio" style="text-decoration: none;color: rgb(255, 187, 0);">Portfolio</a></li>
+                            <li style="list-style: none;"><a href="portfolio.html" style="text-decoration: none;color: rgb(255, 187, 0);">Portfolio</a></li>
                         </ul>
                     </div>
                     <div class="col-4 text-light">
@@ -149,11 +163,12 @@
                             <li style="list-style: none;"><a href="#" style="text-decoration: none;color: rgb(255, 187, 0);">Whatsapp</a></li>
                         </ul>
                     </div>
+                    <p class="text text-light">Tenchoutech &copy; Copyright 2024. All rights reserved</p>
                 </div>
             </div>
         </footer>
-        <!-- Bootstrap core JS-->
-        <!-- Core theme JS-->
+
+
         <script src="js/scripts.js"></script>
 
         <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
