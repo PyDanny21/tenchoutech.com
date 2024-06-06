@@ -436,6 +436,12 @@ form .form-item input{
 .check-container{
   background: var(--bs-body-bg);
   color: var(--bs-body-color);
+  width: 50%!important;
+  height: fit-content;
+  position: fixed;margin: auto;
+  left: 25%;
+  top: 10%;
+  border: 2px solid #fff;
 }
 form label {
   width: 150px;
@@ -496,6 +502,21 @@ form select#time {
     justify-content: center;
 }
 
+.close{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: lightgray;
+    width: 40px;
+    height: 40px;
+    font-size: x-large;
+    cursor: pointer;
+}
 
 @media (max-width:900px) {
   .active{
@@ -568,6 +589,24 @@ form select#time {
   }
   #portfolio-item{
     margin: 7px;
+  }
+  .check-container{
+    width: 100%!important;
+    left: 0;
+    position: fixed;
+    top: -6px;
+    border-radius: 0;
+  }
+  .package{
+    height: 40px;
+  }
+  .close{
+      position: absolute;
+      top: 12px;
+      right: 15px;
+  }
+  form .form-item {
+    width: 100%;
   }
 
   
