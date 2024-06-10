@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -26,8 +27,21 @@
                     <i class="fas fa-bars ms-1"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link text fw-bold" href="index.html">Home</a></li>
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0 d-flex align-items-center">
+                        <li class="nav-item">
+                            <div class="dropdown m-0">
+                                <button class="btn text-light text-uppercase fw-bold dropdown-toggle" style="outline: none;border: none;" type="button" id="services-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </button>
+                                <ol class="dropdown-menu" aria-labelledby="services-dropdown">
+                                    <li><a href="webdev.html" class="dropdown-item">Web development</a></li>
+                                    <li><a href="webdev.html" class="dropdown-item">Web Redesign</a></li>
+                                    <li><a href="webmain.html" class="dropdown-item">Web Maintenance</a></li>
+                                    <li><a href="education.html" class="dropdown-item">IT Training</a></li>
+                                    <li><a href="standard.html" class="dropdown-item">Standard Services</a></li>
+                                </ol>
+                            </div>
+                        </li>
                         <li class="nav-item"><a class="nav-link text fw-bold" href="portfolio.html">Portfolio</a></li>
                         <li class="nav-item"><a class="nav-link text fw-bold" href="pricing.html">Pricing</a></li>
                         <li class="nav-item"><a class="nav-link text fw-bold" href="contact.html">Contact</a></li>
@@ -43,12 +57,28 @@
         </nav>
         <section class="page-section">
             <div class="text-center">
-                <h2 class="section-heading text-uppercase mt-5">Web Development</h2>
-                <h3 class="section-subheading text-muted mb-5">Very Affordable Prices</h3>
+                <h2 class="section-heading text-uppercase mt-5">Maintenance</h2>
+                <!-- <h3 class="section-subheading text-muted mb-5">Very Affordable Prices</h3> -->
             </div>
             <br>
-       
+            <div class="row d-flex justify-content-center">
+                <img src="assets/img/service/support.jpg" alt="Web development" class="img-responsive rounded-5 col-lg-5" style="max-height: 500px;">
+                <div class="col-lg-4 p-3">
+                    <h3 class="">
+                        Let us help you!
+                    </h3>
+                    <p>Unlock the full potential of your online presence with our bespoke web development solutions. At Tenchoutech, we blend creativity, innovation, and technical expertise to craft websites that captivate audiences and drive business growth.
+
+                        With a focus on personalized experiences, responsive design, and cutting-edge technology, we ensure that your website not only meets but exceeds your expectations. From seamless user interfaces to scalable architecture and top-notch security, we have you covered at every step of your digital journey.
+                        
+                        Elevate your brand, streamline your operations, and stand out in today's competitive landscape with our tailored web development services. Let's collaborate to bring your vision to life and create a lasting impression on your audience.
+                        
+                        Ready to take your online presence to the next level? Reach out to us today to discuss how we can turn your ideas into reality!
+                    </p>
+                </div>
+            </div>
         </section>
+
         <!-- Footer-->
         <footer class="footer" style="background: #0b052c;position: relative;margin-top: 350px;">
             <div class="row g-0 bg-primary text-light ad border rounded-5 p-3" style="position: absolute;top: -250px;box-shadow: 0 10px gold;">
@@ -67,9 +97,9 @@
             </div>
             <div class="container-fluid mb-0 p-lg-5 p-4">
                 <ul class="text-center d-flex mx-auto col-lg-3 align-items-center justify-content-center mt-2" style="list-style: none;">
-                    <li><a href="#" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-facebook fa-2x"></i></a></li>
-                    <li><a href="#" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-tiktok fa-2x"></i></a></li>
-                    <li><a href="#" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-instagram fa-2x"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61559877811487" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-facebook fa-2x"></i></a></li>
+                    <li><a href="https://www.instagram.com/tenchou_technology" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-instagram fa-2x"></i></a></li>
+                    <li><a href="https://www.tiktok.com/tenchou.technolog" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-tiktok fa-2x"></i></a></li>
                     <li><a href="#" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-twitter fa-2x"></i></a></li>
                     <li><a href="#" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-whatsapp fa-2x"></i></a></li>
                     <li><a href="#" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-linkedin fa-2x"></i></a></li>
@@ -101,22 +131,17 @@
                             <li style="list-style: none;"><a href="portfolio.html" style="text-decoration: none;color: rgb(255, 187, 0);">Portfolio</a></li>
                         </ul>
                     </div>
-                    <!-- <div class="col-4 text-light">
-                        <span class="text-center fw-bold">Social Media</span>
-                        <ul>
-                            <li style="list-style: none;"><a href="#" style="text-decoration: none;color: rgb(255, 187, 0);">Facebook</a></li>
-                            <li style="list-style: none;"><a href="#" style="text-decoration: none;color: rgb(255, 187, 0);">Instagram</a></li>
-                            <li style="list-style: none;"><a href="#" style="text-decoration: none;color: rgb(255, 187, 0);">X</a></li>
-                            <li style="list-style: none;"><a href="#" style="text-decoration: none;color: rgb(255, 187, 0);">LinkedIn</a></li>
-                            <li style="list-style: none;"><a href="#" style="text-decoration: none;color: rgb(255, 187, 0);">Whatsapp</a></li>
-                        </ul>
-                    </div> -->
+                    
                 </div>
                 <p class="text text-light">Tenchoutech &copy; Copyright 2024. All rights reserved</p>
             </div>
         </footer>
+        <div class="whatsapp" style="position: fixed;bottom: 20px; right: 20px;background: green;border-radius: 20%;padding: 10px;">
+            <a href=""><i class="fab fa-whatsapp fa-2x" style="color: #fff;"></i></a>
+        </div>
         <script src="js/scripts.js"></script>
         <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
         <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
+

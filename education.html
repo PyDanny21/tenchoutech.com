@@ -26,8 +26,21 @@
                     <i class="fas fa-bars ms-1"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link text fw-bold" href="index.html">Home</a></li>
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0 d-flex align-items-center">
+                        <li class="nav-item">
+                            <div class="dropdown m-0">
+                                <button class="btn text-light text-uppercase fw-bold dropdown-toggle" style="outline: none;border: none;" type="button" id="services-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </button>
+                                <ol class="dropdown-menu" aria-labelledby="services-dropdown">
+                                    <li><a href="webdev.html" class="dropdown-item">Web development</a></li>
+                                    <li><a href="webdev.html" class="dropdown-item">Web Redesign</a></li>
+                                    <li><a href="webmain.html" class="dropdown-item">Web Maintenance</a></li>
+                                    <li><a href="education.html" class="dropdown-item">IT Training</a></li>
+                                    <li><a href="standard.html" class="dropdown-item">Standard Services</a></li>
+                                </ol>
+                            </div>
+                        </li>
                         <li class="nav-item"><a class="nav-link text fw-bold" href="portfolio.html">Portfolio</a></li>
                         <li class="nav-item"><a class="nav-link text fw-bold" href="pricing.html">Pricing</a></li>
                         <li class="nav-item"><a class="nav-link text fw-bold" href="contact.html">Contact</a></li>
@@ -43,11 +56,52 @@
         </nav>
         <section class="page-section">
             <div class="text-center">
-                <h2 class="section-heading text-uppercase mt-5">Web Development</h2>
-                <h3 class="section-subheading text-muted mb-5">Very Affordable Prices</h3>
+                <h2 class="section-heading text-uppercase mt-5">Online Education</h2>
+                <!-- <h3 class="section-subheading text-muted mb-5">Very Affordable Prices</h3> -->
             </div>
             <br>
-       
+            <div class="row d-flex justify-content-center">
+                <img src="assets/img/service/education.jpg" alt="Web development" class="img-responsive rounded-5 col-lg-5" style="max-height: 500px;">
+                <div class="col-lg-4 p-3">
+                    <h3 class="">
+                        Our Online Tutorials!
+                    </h3>
+                    <p>
+                        Embark on a transformative journey into the world of IT with Tenchou Technology. Whether you're a novice eager to delve into the fundamentals or a seasoned professional seeking to expand your expertise, we have the tools, resources, and support to guide you every step of the way.
+
+                        Our comprehensive online IT studies offer a dynamic learning experience tailored to your unique goals and aspirations. From in-depth courses covering programming languages, cybersecurity, cloud computing, and more, to hands-on projects and real-world simulations, we empower you to master the skills demanded by today's digital landscape.
+
+                        Join a community of like-minded learners, collaborate with industry experts, and unlock endless opportunities for career advancement. Whether you're looking to kickstart a new career path, upskill for your current role, or stay ahead of the curve in a rapidly evolving industry, we're here to help you succeed.  
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="page-section pt-0">
+            <h3 class="text-center">What you can expect</h3>
+            
+            <div class="container expectations">
+                <div class="expect">                    
+                    <b>Comprehensive Curriculum</b> <br> Access to a well-structured curriculum covering all aspects of web development, from basic HTML and CSS to advanced JavaScript frameworks and server-side programming languages.
+                </div>
+                <div class="expect">                    
+                    <b>Hands-on-Projects</b> <br> Opportunities to work on real-world projects and exercises, allowing them to apply theoretical knowledge to practical scenarios and build a professional portfolio showcasing their skills.
+                </div>
+                <div class="expect">                    
+                    <b>Expert Instructions</b>Guidance from experienced instructors who are industry professionals with extensive knowledge and expertise in web development, offering valuable insights, tips, and best practices.
+                </div>
+                <div class="expect">                    
+                    <b>Interactive Learning</b> <br> Engaging and interactive learning experiences through multimedia content, quizzes, assignments, and discussions, fostering active participation and deepening understanding.
+                </div>
+                <div class="expect">                    
+                    <b>Flexibility</b><br> Flexible learning options, including self-paced courses, live sessions, and on-demand resources, allowing them to learn at their own pace and accommodate their busy schedules.
+                </div>
+                <div class="expect">                    
+                    <b>Continuous Updates</b><br> Regular updates to course content and materials to reflect the latest trends, technologies, and best practices in web development, ensuring that learners stay current and competitive in the field.
+                </div>
+                <div class="expect">                    
+                    <b>Certification</b><br> Option to earn certificates upon completion of courses, demonstrating proficiency and commitment to excellence in web development, which can enhance their credibility and career prospects.
+                </div>
+            </div>
         </section>
         <!-- Footer-->
         <footer class="footer" style="background: #0b052c;position: relative;margin-top: 350px;">
@@ -67,9 +121,9 @@
             </div>
             <div class="container-fluid mb-0 p-lg-5 p-4">
                 <ul class="text-center d-flex mx-auto col-lg-3 align-items-center justify-content-center mt-2" style="list-style: none;">
-                    <li><a href="#" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-facebook fa-2x"></i></a></li>
-                    <li><a href="#" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-tiktok fa-2x"></i></a></li>
-                    <li><a href="#" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-instagram fa-2x"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61559877811487" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-facebook fa-2x"></i></a></li>
+                    <li><a href="https://www.instagram.com/tenchou_technology" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-instagram fa-2x"></i></a></li>
+                    <li><a href="https://www.tiktok.com/tenchou.technolog" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-tiktok fa-2x"></i></a></li>
                     <li><a href="#" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-twitter fa-2x"></i></a></li>
                     <li><a href="#" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-whatsapp fa-2x"></i></a></li>
                     <li><a href="#" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-linkedin fa-2x"></i></a></li>
@@ -115,6 +169,9 @@
                 <p class="text text-light">Tenchoutech &copy; Copyright 2024. All rights reserved</p>
             </div>
         </footer>
+        <div class="whatsapp" style="position: fixed;bottom: 20px; right: 20px;background: green;border-radius: 20%;padding: 10px;">
+            <a href=""><i class="fab fa-whatsapp fa-2x" style="color: #fff;"></i></a>
+        </div>
         <script src="js/scripts.js"></script>
         <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
         <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>

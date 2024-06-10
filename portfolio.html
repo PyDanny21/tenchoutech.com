@@ -26,15 +26,28 @@
                     <i class="fas fa-bars ms-1"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link text fw-bold" href="index.html">Home</a></li>
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0 d-flex align-items-center">
+                        <li class="nav-item">
+                            <div class="dropdown m-0">
+                                <button class="btn text-light text-uppercase fw-bold dropdown-toggle" style="outline: none;border: none;" type="button" id="services-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </button>
+                                <ol class="dropdown-menu" aria-labelledby="services-dropdown">
+                                    <li><a href="webdev.html" class="dropdown-item">Web development</a></li>
+                                    <li><a href="webdev.html" class="dropdown-item">Web Redesign</a></li>
+                                    <li><a href="webmain.html" class="dropdown-item">Web Maintenance</a></li>
+                                    <li><a href="education.html" class="dropdown-item">IT Training</a></li>
+                                    <li><a href="standard.html" class="dropdown-item">Standard Services</a></li>
+                                </ol>
+                            </div>
+                        </li>
                         <li class="nav-item"><a class="nav-link text fw-bold" href="portfolio.html">Portfolio</a></li>
                         <li class="nav-item"><a class="nav-link text fw-bold" href="pricing.html">Pricing</a></li>
                         <li class="nav-item"><a class="nav-link text fw-bold" href="contact.html">Contact</a></li>
                         <li class="nav-item"><a class="nav-link text fw-bold" href="tel:01066560595065"><i class="fa fa-phone"></i> 20336506549</a></li>
                         <li class="nav-item">
-                            <button class="btn text-light fw-bold darkmode nav-link" type="button" aria-label="Toggle darkmode">DARK
-                                <i class="fa fa-moon"></i>
+                            <button class="btn text-light fw-bold darkmode nav-link" type="button" aria-label="Toggle darkmode">
+                                <i class="fa fa-moon"></i>DARK
                             </button>
                         </li>
                     </ul>
@@ -153,9 +166,9 @@
             </div>
             <div class="container-fluid mb-0 p-lg-5 p-4">
                 <ul class="text-center d-flex mx-auto col-lg-3 align-items-center justify-content-center mt-2" style="list-style: none;">
-                    <li><a href="#" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-facebook fa-2x"></i></a></li>
-                    <li><a href="#" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-tiktok fa-2x"></i></a></li>
-                    <li><a href="#" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-instagram fa-2x"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61559877811487" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-facebook fa-2x"></i></a></li>
+                    <li><a href="https://www.instagram.com/tenchou_technology" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-instagram fa-2x"></i></a></li>
+                    <li><a href="https://www.tiktok.com/tenchou.technolog" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-tiktok fa-2x"></i></a></li>
                     <li><a href="#" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-twitter fa-2x"></i></a></li>
                     <li><a href="#" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-whatsapp fa-2x"></i></a></li>
                     <li><a href="#" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-linkedin fa-2x"></i></a></li>
@@ -201,6 +214,9 @@
                 <p class="text text-light">Tenchoutech &copy; Copyright 2024. All rights reserved</p>
             </div>
         </footer>
+        <div class="whatsapp" style="position: fixed;bottom: 20px; right: 20px;background: green;border-radius: 20%;padding: 10px;">
+            <a href=""><i class="fab fa-whatsapp fa-2x" style="color: #fff;"></i></a>
+        </div>
         <script src="js/scripts.js"></script>
         <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
         <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>

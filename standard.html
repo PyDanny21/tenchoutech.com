@@ -26,8 +26,21 @@
                     <i class="fas fa-bars ms-1"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link text fw-bold" href="index.html">Home</a></li>
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0 d-flex align-items-center">
+                        <li class="nav-item">
+                            <div class="dropdown m-0">
+                                <button class="btn text-light text-uppercase fw-bold dropdown-toggle" style="outline: none;border: none;" type="button" id="services-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </button>
+                                <ol class="dropdown-menu" aria-labelledby="services-dropdown">
+                                    <li><a href="webdev.html" class="dropdown-item">Web development</a></li>
+                                    <li><a href="webdev.html" class="dropdown-item">Web Redesign</a></li>
+                                    <li><a href="webmain.html" class="dropdown-item">Web Maintenance</a></li>
+                                    <li><a href="education.html" class="dropdown-item">IT Training</a></li>
+                                    <li><a href="standard.html" class="dropdown-item">Standard Services</a></li>
+                                </ol>
+                            </div>
+                        </li>
                         <li class="nav-item"><a class="nav-link text fw-bold" href="portfolio.html">Portfolio</a></li>
                         <li class="nav-item"><a class="nav-link text fw-bold" href="pricing.html">Pricing</a></li>
                         <li class="nav-item"><a class="nav-link text fw-bold" href="contact.html">Contact</a></li>
@@ -43,11 +56,41 @@
         </nav>
         <section class="page-section">
             <div class="text-center">
-                <h2 class="section-heading text-uppercase mt-5">Web Development</h2>
-                <h3 class="section-subheading text-muted mb-5">Very Affordable Prices</h3>
+                <h2 class="section-heading text-uppercase mt-5">Standard Services</h2>
+                <!-- <h3 class="section-subheading text-muted mb-5">Very Affordable Prices</h3> -->
             </div>
             <br>
-       
+            <div class="row d-flex justify-content-center">
+                <img src="assets/img/service/others.jpg" alt="Web development" class="img-responsive rounded-5 col-lg-8" height="400px" style="object-fit: cover;object-position: center top;">
+            </div>
+        </section>
+        <section class="page-section" style="padding: 2rem 0;">
+            <h3 class="text-center">What you can expect</h3>
+            
+            <div class="container expectations">
+                <div class="expect">                    
+                    <b>Windows Installation</b> <br> Tailored web development to suit the specific needs and goals of their business, ensuring unique functionality and design.
+                </div>
+                <div class="expect">                    
+                    <b>Windows Activation</b> <br> Websites optimized for various devices and screen sizes, providing a seamless user experience across desktops, tablets, and smartphones.
+                </div>
+                <div class="expect">                    
+                    <b>MS Office Installation</b> : Focus on user experience (UX) and user interface (UI) design to enhance engagement and usability, resulting in higher conversion rates and customer satisfaction.
+                </div>
+                <div class="expect">                    
+                    <b>Logo Designing</b> <br> Development of scalable solutions that can grow alongside their business, accommodating increased traffic and functionality requirements without compromising performance.
+                </div>
+                <div class="expect">                    
+                    <b>Graphic Designing</b><br> Implementation of optimization techniques to improve website loading speed, ensuring fast and smooth browsing experiences for visitors.
+                </div>
+                <div class="expect">                    
+                    <b>Data Entry</b> <br> Integration of search engine optimization (SEO) best practices to enhance visibility and ranking on search engine results pages (SERPs), driving organic traffic to their website.
+                </div>
+                <div class="expect">                    
+                    <b>Records Keeping</b> <br> Implementation of robust security measures to protect against cyber threats and ensure the safety of sensitive data, instilling trust and confidence in visitors.
+                </div>
+
+            </div>
         </section>
         <!-- Footer-->
         <footer class="footer" style="background: #0b052c;position: relative;margin-top: 350px;">
@@ -67,9 +110,9 @@
             </div>
             <div class="container-fluid mb-0 p-lg-5 p-4">
                 <ul class="text-center d-flex mx-auto col-lg-3 align-items-center justify-content-center mt-2" style="list-style: none;">
-                    <li><a href="#" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-facebook fa-2x"></i></a></li>
-                    <li><a href="#" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-tiktok fa-2x"></i></a></li>
-                    <li><a href="#" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-instagram fa-2x"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61559877811487" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-facebook fa-2x"></i></a></li>
+                    <li><a href="https://www.instagram.com/tenchou_technology" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-instagram fa-2x"></i></a></li>
+                    <li><a href="https://www.tiktok.com/tenchou.technolog" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-tiktok fa-2x"></i></a></li>
                     <li><a href="#" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-twitter fa-2x"></i></a></li>
                     <li><a href="#" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-whatsapp fa-2x"></i></a></li>
                     <li><a href="#" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-linkedin fa-2x"></i></a></li>
@@ -115,6 +158,9 @@
                 <p class="text text-light">Tenchoutech &copy; Copyright 2024. All rights reserved</p>
             </div>
         </footer>
+        <div class="whatsapp" style="position: fixed;bottom: 20px; right: 20px;background: green;border-radius: 20%;padding: 10px;">
+            <a href=""><i class="fab fa-whatsapp fa-2x" style="color: #fff;"></i></a>
+        </div>
         <script src="js/scripts.js"></script>
         <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
         <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
