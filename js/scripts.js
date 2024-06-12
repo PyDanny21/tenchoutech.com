@@ -78,28 +78,39 @@ window.addEventListener('DOMContentLoaded', event => {
         const isDarkMode = savedMode === 'enabled';
         updateMode(isDarkMode);
     });
-});
-const Package=document.querySelectorAll('#selectPackage');
-const Checkout=document.querySelector('.checkout');
-const Close=document.querySelector('.close');
+    const Checkout=document.querySelector('.checkout');
+    // Set the countdown time (in seconds)
+    let countdownTime = 10; 
+    // Update the countdown every 1 second
+    const countdownInterval = setInterval(() => {
+        if (countdownTime > 0) {
+            countdownTime--;
+        } else {
+            clearInterval(countdownInterval);
+            Checkout.style.display='flex';
+        }
+    }, 1000);
 
-Package.forEach(package=>{
-    package.addEventListener('click',()=>{
-        Checkout.style.display='block';
+    // closing Checkout
+    const Close=document.querySelector('.close');
+    
+    
+    Close.addEventListener('click',()=>{
+        Checkout.style.display='none';
     });
 });
 
-Close.addEventListener('click',()=>{
-    Checkout.style.display='none';
+const Packages=document.querySelectorAll('#selectPackage');
+Packages.forEach(item=>{
+    item.addEventListener('click',()=>{
+        window.location.href='contact.html';
+    });
 });
-// const Portfolio=document.querySelectorAll('#portfolio-item');
-// Portfolio.forEach(portfolio => {
-//     portfolio.addEventListener(('mouseover'),()=>{
-//         console.log('hrwbwr'); 
-//     });
-//     // portfolio.addEventListener('mouseleave',()=>{
-//     //     portfolio.closest('#openProject').innerHTML='';
-//     // });
-    
-// });
+const otherPackages=document.querySelectorAll('.other-prices li');
+otherPackages.forEach(item=>{
+    item.addEventListener('click',()=>{
+        window.location.href='contact.html';
+    });
+});
+
 

@@ -85,6 +85,11 @@
                                 <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                             </div>
                             <div class="form-group">
+                                <!--Company Name input-->
+                                <input class="form-control" id="name" type="text" placeholder="Company Name *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A Company name is required.</div>
+                            </div>
+                            <div class="form-group">
                                 <!-- Email address input-->
                                 <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
                                 <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
@@ -97,12 +102,18 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="form-group form-group-textarea mb-md-0">
+                            <div class="form-group form-group-textarea mb-md-0 ms-md-2">
                                 <!-- Message input-->
-                                <textarea class="form-control" id="message" placeholder="Tell us about your project *" data-sb-validations="required"></textarea>
+                                <textarea class="form-control" id="message" placeholder="Tell us about your desired service *" data-sb-validations="required"></textarea>
                                 <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                             </div>
                         </div>
+                        <select name="your package" id="yourPackage" class="form-group my-3 col-lg mx-lg-3 p-3 rounded-2 fw-bold border" style="outline: none;border: none;">
+                            <option value="Web development and redesign">Website Development and Redesign</option>
+                            <option value="Online Education">Online Education</option>
+                            <option value="Maintenance">Maintenance</option>
+                            <option value="Others">Others</option>
+                        </select>
                     </div>
                     <!-- Submit success message-->
                     <!---->
@@ -171,21 +182,12 @@
                         <ul>
                             <li style="list-style: none;"><a href="pricing.html" style="text-decoration: none;color: rgb(255, 187, 0);">Pricing</a></li>
                             <li style="list-style: none;"><a href="contact.html" style="text-decoration: none;color: rgb(255, 187, 0);">Contact</a></li>
-                            <li style="list-style: none;"><a href="#about" style="text-decoration: none;color: rgb(255, 187, 0);">About</a></li>
-                            <li style="list-style: none;"><a href="#services" style="text-decoration: none;color: rgb(255, 187, 0);">Services</a></li>
+                            <li style="list-style: none;"><a href="index.html#about" style="text-decoration: none;color: rgb(255, 187, 0);">About</a></li>
+                            <li style="list-style: none;"><a href="index.html#services" style="text-decoration: none;color: rgb(255, 187, 0);">Services</a></li>
                             <li style="list-style: none;"><a href="portfolio.html" style="text-decoration: none;color: rgb(255, 187, 0);">Portfolio</a></li>
                         </ul>
                     </div>
-                    <!-- <div class="col-4 text-light">
-                        <span class="text-center fw-bold">Social Media</span>
-                        <ul>
-                            <li style="list-style: none;"><a href="#" style="text-decoration: none;color: rgb(255, 187, 0);">Facebook</a></li>
-                            <li style="list-style: none;"><a href="#" style="text-decoration: none;color: rgb(255, 187, 0);">Instagram</a></li>
-                            <li style="list-style: none;"><a href="#" style="text-decoration: none;color: rgb(255, 187, 0);">X</a></li>
-                            <li style="list-style: none;"><a href="#" style="text-decoration: none;color: rgb(255, 187, 0);">LinkedIn</a></li>
-                            <li style="list-style: none;"><a href="#" style="text-decoration: none;color: rgb(255, 187, 0);">Whatsapp</a></li>
-                        </ul>
-                    </div> -->
+                  
                 </div>
                 <p class="text text-light">Tenchoutech &copy; Copyright 2024. All rights reserved</p>
             </div>

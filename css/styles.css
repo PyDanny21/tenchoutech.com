@@ -32,6 +32,7 @@
   --bs-gray-900: #212529;
   --bs-primary: #ffc800;
   --bs-secondary: #6c757d;
+  --bs-tertiary-bg:#f8f9fa;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc800;
@@ -87,6 +88,11 @@
     --bs-light-rgb: #333;
     --bs-dark-rgb: #fff;
     --lightblue:#384649;
+    --bs-tertiary-bg: #505152;
+}
+
+.dropdown-item{
+  --bs-dropdown-link-hover-bg: var(--bs-tertiary-bg)!important;
 }
 
 #process{
@@ -369,6 +375,12 @@ section#contact form#contactForm :-ms-input-placeholder {
   color: #ced4da;
 }
 
+#yourPackage{
+  color: var(--bs-body-color);
+  background: var(--bs-body-bg);
+
+}
+
 .footer {
   text-align: center;
   font-size: 0.9rem;
@@ -403,6 +415,9 @@ footer ul{
 /* check out page  */
 .checkout{
   display: none;
+  align-items: center;
+  justify-content: center;
+  animation: 1s;
 }
 form .form-item {
   /* display: flex; */
@@ -411,7 +426,7 @@ form .form-item {
   /* background: green; */
   padding: 0 20px;
   margin: 20px 0;
-  width: 50%;
+  width: 100%;
 }
 form .form-item input{
   width: 100%;
@@ -421,16 +436,17 @@ form .form-item input{
   outline: none;
   padding: 10px;
   box-shadow: 0 3px 2px #007BFF;
-  background: lightgray;
+  background: #e6e3e3;
 }
 .check-container{
   background: var(--bs-body-bg);
   color: var(--bs-body-color);
   width: 50%!important;
   height: fit-content;
-  position: fixed;margin: auto;
+  position: fixed;
+  margin: auto;
   left: 25%;
-  top: 10%;
+  /* top: 10%; */
   border: 2px solid #fff;
 }
 form label {
@@ -439,15 +455,16 @@ form label {
   text-transform: capitalize;
 }
 form select#time {
-  width: 100%;
-  height: 36px;
+  width: 95%;
+  height: 45px;
   padding: 0 15px;
   border: none;
-  box-shadow: 0 3px 5px #007BFF;
+  box-shadow: 0 3px 2px #007BFF;
   border-radius: 6px;
   outline: none;
-  /* margin: auto 10%; */
-  background: lightgray;
+  margin:0 auto 15px;
+  display: flex;
+  background: #e6e3e3;
 }
 /* .package{
   height: 50px; */
@@ -608,6 +625,10 @@ form select#time {
     height: fit-content;
     margin:20px 5px;
   }
+  .timeline > li .timeline-image {
+    width: 50px;
+    height: 50px;
+}
   #lasten {
     right: 26%;
     top: 0;
@@ -622,9 +643,7 @@ form select#time {
   .check-container{
     width: 100%!important;
     left: 0;
-    position: sticky;
-    top: -120px;
-    border-radius: 0;
+
   }
 
   .package{
@@ -645,6 +664,9 @@ form select#time {
   }
   .expect{
     width: 100%;
+  }
+  .intro{
+    width: 100%!important;
   }
 }
 
