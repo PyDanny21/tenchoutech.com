@@ -676,7 +676,7 @@ form select#time {
   }
   .carousel-inner {
     align-items: center;
-    height: 70vh!important;
+    height: 80vh!important;
     min-height: auto!important;
   }
   .carousel-inner.test{
@@ -706,4 +706,16 @@ form select#time {
   .footLinks{
     flex-direction: column;
   }
+}
+@media (max-width:350px) {
+  .carousel-inner {
+      align-items: center;
+      height: 130vh!important;
+  }
+  .carousel-item{
+    padding: 10px!important;
+  }
+  #lasten {
+    right: 15%;
+}
 }
