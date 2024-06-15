@@ -398,11 +398,10 @@ footer ul{
   font-size: 10rem!important;
 }
 .carousel-inner{
-  /* height: 80vh!important; */
-  min-height: 80vh!important;
+  height: 60vh!important;
 }
 .carousel-item{
-  width: 53%!important;
+  width: 600px!important;
 
 }
 
@@ -444,8 +443,9 @@ form .form-item input{
   width: 50%!important;
   height: fit-content;
   position: fixed;
+  max-width: 600px;
   margin: auto;
-  left: 25%;
+  /* left: 25%; */
   /* top: 10%; */
   border: 2px solid #fff;
 }
@@ -589,21 +589,24 @@ form select#time {
   .lower{
     margin-top: 10px;
   }
-  .carousel-item{
-    width: 100%;
-    height: fit-content!important;
+  .prevNext{
+    margin: 0!important;
+    top: 30%!important;
   }
-  .f-width{
-    width: 100%!important;
-    max-width: 400px;
-  }
+  .f-width {
+    width: 84%!important;
+    max-width: 200px;
+}
   .carousel-inner{
     align-items: center;
-    height: 90vh!important;
+    height: 60vh!important;
   }
   .carousel-inner.test{
     align-items: center;
     height: 80vh!important;
+  }
+  .carousel-item{
+    width: 500px!important;
   }
   .rcd{
     left: 23%!important;
@@ -640,11 +643,6 @@ form select#time {
   #portfolio-item{
     margin: 7px;
   }
-  .check-container{
-    width: 100%!important;
-    left: 0;
-
-  }
 
   .package{
     height: 40px;
@@ -657,11 +655,6 @@ form select#time {
   form .form-item {
     width: 100%;
   }
-  .caro-left{
-    flex-direction: column!important;
-    align-items: center;
-    justify-content: center!important;
-  }
   .expect{
     width: 100%;
   }
@@ -670,19 +663,31 @@ form select#time {
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  
   .service{
     height: 950px!important;
   }
   .carousel-inner {
     align-items: center;
-    height: 80vh!important;
+    height: fit-content!important;
     min-height: auto!important;
   }
   .carousel-inner.test{
     align-items: center;
     height: 70vh!important;
     min-height: auto!important;
+  }
+  .carousel-item {
+    flex-direction: column!important;
+    width:400px!important;
+  }
+  .caro-left{
+    flex-direction: column!important;
+  }
+  .f-width {
+    width: 100%!important;
+    max-width: 400px;
 }
 }
 @media (max-width:600px) {
@@ -690,9 +695,17 @@ form select#time {
     align-items: center;
     height: 105vh!important;
   }
+  .carousel-item {
+    flex-direction: column!important;
+    width: 90%!important;
+  }
   .carousel-inner.test {
     align-items: center;
     height: 70vh!important;
+  }
+  .prevNext{
+    margin: 0!important;
+    top: 40%!important;
   }
   .cta-container{
     flex-direction: column!important;
@@ -705,6 +718,9 @@ form select#time {
   }
   .footLinks{
     flex-direction: column;
+  }
+  .check-container{
+    width: 95%!important;
   }
 }
 @media (max-width:350px) {

@@ -1,0 +1,12 @@
+# Cache images for one year
+*.jpg
+  Cache-Control: max-age=31536000
+
+*.jpeg
+  Cache-Control: max-age=31536000
+
+*.png
+  Cache-Control: max-age=31536000
+
+*.gif
+  Cache-Control: max-age=31536000
