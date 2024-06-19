@@ -73,7 +73,7 @@
                 <p class="ps-3 mb-0"><span class="fw-bold">Tenchou Technology</span></p>
                 <p class="ps-3 mb-0"><span class="fw-bold"><i class="fa fa-map-marker me-2"></i>Location : </span>Fenou Street, Sakumono-Tema <br> Ghana</p>
                 <p class="ps-3 mb-0"><span class="fw-bold"><i class="fa fa-envelope me-2"></i>Email : </span>tenchoutech@gmail.com</p>
-                <p class="ps-3 mb-0"><span class="fw-bold"><i class="fa fa-phone me-2"></i>Call us : </span>05156465949494</p>
+                <p class="ps-3 mb-0"><span class="fw-bold"><i class="fa fa-phone me-2"></i>Call us : </span>+233500374356</p>
             </div>
         </div>
         <section class="page-section" id="contact">
@@ -167,16 +167,15 @@
                         </ul>
                     </div>
                     <div class="col-4 text-light">
-                        <span class="text-center fw-bold">Quick Links</span>
+                        <span class="text-center fw-bold">Services</span>
                         <ul>
-                            <li style="list-style: none;"><a href="pricing.html" style="text-decoration: none;color: rgb(255, 187, 0);">Pricing</a></li>
-                            <li style="list-style: none;"><a href="contact.html" style="text-decoration: none;color: rgb(255, 187, 0);">Contact</a></li>
-                            <li style="list-style: none;"><a href="index.html#about" style="text-decoration: none;color: rgb(255, 187, 0);">About</a></li>
-                            <li style="list-style: none;"><a href="index.html#services" style="text-decoration: none;color: rgb(255, 187, 0);">Services</a></li>
-                            <li style="list-style: none;"><a href="portfolio.html" style="text-decoration: none;color: rgb(255, 187, 0);">Portfolio</a></li>
+                            <li style="list-style: none;"><a href="webdev.html" style="text-decoration: none;color: rgb(255, 187, 0);">  Web Development</a></li>
+                            <li style="list-style: none;"><a href="redesign.html" style="text-decoration: none;color: rgb(255, 187, 0);">  Web Redesign</a></li>
+                            <li style="list-style: none;"><a href="webmain.html" style="text-decoration: none;color: rgb(255, 187, 0);">  Web Maintenance</a></li>
+                            <li style="list-style: none;"><a href="education.html" style="text-decoration: none;color: rgb(255, 187, 0);">  Online Education</a></li>
+                            <li style="list-style: none;"><a href="standard.html" style="text-decoration: none;color: rgb(255, 187, 0);">  Standard Services</a></li>
                         </ul>
                     </div>
-                  
                 </div>
                 <p class="text text-light">Tenchoutech &copy; Copyright 2024. All rights reserved</p>
             </div>
@@ -188,36 +187,39 @@
         <script src="js/scripts.js"></script>
         <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
         <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+
         <script>
-            const ser_key='service_s32bhrl'
-            const tem_key= 'template_bnyhpp8'
-            const public_key='kEP6OQT1HFRH9YcxI'
-            // Initialize EmailJS
-            (function() {
-                emailjs.init(public_key);
-            })();
-
             document.getElementById('contactForm').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // Generate a unique template_params object
-                var Allmessage=document.getElementById('message').value;
-                var phone= document.getElementById('phone').value;
-                var yourPackage= document.getElementById('yourPackage').value;
-                Allmessage+=phone+yourPackage;
-                const templateParams = {
-                    name: document.getElementById('name').value,
-                    email: document.getElementById('email').value,
-                    message: Allmessage
-                };
+            event.preventDefault();
 
-                emailjs.send(ser_key, tem_key, templateParams)
-                    .then(function(response) {
-                        alert('Email successfully sent!');
-                        document.getElementById('contactForm').reset();
-                    }, function(error) {
-                        alert('Failed to send email. Error: ' + JSON.stringify(error));
-                    });
-            });
+            var Allmessage = document.getElementById('message').value;
+            const emailParams = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                message: Allmessage,
+            };
+
+            // Configure your email sending details
+            const senderEmail = 'quansahd577@gmail.com'; // Replace with your own email address
+            const receiverEmail = 'tenchoutech@gmail.com'; // Replace with recipient's email address
+            const subject = 'New Contact Form Submission';
+
+            // Send email using SMTP.js
+            Email.send({
+                SecureToken: '9E82797C9552B14911AEADE05833B464B031C7400E5524FEBB9C206C28EEE55500B941F5FF7ACC0C289456AD12F3ADE7',
+                To: receiverEmail,
+                From: senderEmail,
+                Subject: subject,
+                Body: `Name: ${emailParams.name}<br>Email: ${emailParams.email}<br>Message: ${emailParams.message}`
+            }).then(
+                message => {
+                    alert('Email successfully sent!');
+                    document.getElementById('contactForm').reset();
+                }
+            ).catch(error => alert('Failed to send email. Error: ' + JSON.stringify(error)));
+        });
+
         </script>
     </body>
 </html>
